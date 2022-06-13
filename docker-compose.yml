@@ -1,9 +1,8 @@
 version: '3.3'
 services:
   vrising:
-    # build: . # Build from Dockerfile
+    build: .
     container_name: vrising
-    image: trueosiris/vrising
     network_mode: bridge
     environment:
       - TZ=Europe/Paris
